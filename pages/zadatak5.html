@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 5 - Metoda Najmanjih Kvadrata</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .result-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .result {
+            font-size: 1.2em;
+            color: #007bff;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            text-align: center;
+            padding: 8px;
+            word-wrap: break-word;
+        }
+        table th {
+            background-color: #f1f1f1;
+        }
+        table td {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#" style="font-size: 1.2rem;">
+                Primjena Numeričkih Metoda u SI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="./zadatak1.html">Zadatak 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./zadatak2.html">Zadatak 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./zadatak3.html">Zadatak 3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./zadatak4.html">Zadatak 4</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./zadatak5.html">Zadatak 5</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="result-container">
+        <h2 class="text-center mb-4">Zadatak 5 - Metoda Najmanjih Kvadrata</h2>
+
+        <h4>Podaci:</h4>
+        <p>U tabeli je dat rast bakterija k u zavisnosti od koncentracije kisika x. Izracunati
+          koeficijente a i b aproksimacionog polinoma!</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>x</th>
+                    <th>0.4</th>
+                    <th>0.7</th>
+                    <th>1.3</th>
+                    <th>2.1</th>
+                    <th>4</th>
+                    <th>6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>k</th>
+                    <td>1</td>
+                    <td>2.2</td>
+                    <td>5.1</td>
+                    <td>7.2</td>
+                    <td>8.8</td>
+                    <td>11</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>Rješenja:</h4>
+        <div id="rjesenja" class="result mt-4"></div>
+
+        <button class="btn btn-primary w-100 mt-3" id="izracunaj">Izračunaj</button>
+    </div>
+
+    <footer class="bg-light text-center text-muted py-3">
+      Zadaća 3 iz predmeta <strong>Primjena Numeričkih metoda u softverskom inženjerstvu</strong><br>
+      Autor: Belma Đelilović<br>
+      Indeks: II 113<br>
+  </footer>
+
+    <script type="module"  src="../script/mnk.js"></script> <!-- Uključivanje metode iz posebne datoteke -->
+    <script type="module"  src="../script/zad5.js"></script> <!-- Skripta koja koristi metodu za izračun -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
